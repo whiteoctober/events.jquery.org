@@ -1,0 +1,193 @@
+/* Info
+	- Document: jQuery UK 2013
+	- Version:  1.0
+	- Author:   C.Wood (@carljwood)
+*/
+
+/* Reset
+-------------------------------------------------- */
+* { margin:0; padding:0; }
+
+/* Base
+-------------------------------------------------- */
+
+body {
+	background:#131B28;
+}
+
+/* Typography
+-------------------------------------------------- */
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FrutigerLTStd55RomanRegular';
+    src: url('../fonts/frutigerltstd-roman-webfont.eot');
+    src: url('../fonts/frutigerltstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutigerltstd-roman-webfont.woff') format('woff'),
+         url('../fonts/frutigerltstd-roman-webfont.ttf') format('truetype'),
+         url('../fonts/frutigerltstd-roman-webfont.svg#FrutigerLTStd55RomanRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+	color:#fff;
+	font-family: 'BebasNeueRegular';
+	font-size:3.2em;
+	letter-spacing:2px;
+	font-weight:normal;
+}
+
+h2 {
+	color:#eee;
+	font-family: 'BebasNeueRegular';
+	font-size:2.5em;
+	font-weight:normal;
+	line-height:1em;
+	margin-bottom:.35em;
+	letter-spacing:1px;
+}
+
+p {
+	color:#ccc;
+	font-family:'FrutigerLTStd55RomanRegular';
+	font-size:14px;
+}
+
+/* Header
+-------------------------------------------------- */
+
+header {
+	padding:1.5em 0;
+	text-align:center;
+}
+
+header .radiohead {
+	background:url('../img/radiohead_sprite.png');
+	height:410px;
+	margin:0 auto;
+	width:800px;
+	max-width:100%;
+}
+
+.jquerylogo {
+	margin-bottom:2em;
+}
+
+.jquerylogo a {
+	background:url('../img/jquery_logo.png') center no-repeat;
+	display:block;
+	height:50px;
+	width:212px;
+}
+
+p.date-location {
+	background:#DB493C;
+	color:#fff;
+	display:inline-block;
+	font-family: 'BebasNeueRegular';
+	font-size:2em;
+	letter-spacing:0.07em;
+	margin-top:.25em;
+	padding:.3em .5em;
+}
+
+.event-title {
+	text-align:center;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+footer {
+	margin:2em 0;
+	padding:1em 0;
+}
+
+footer p {
+	color:#aaa;
+	margin:0 auto;
+	line-height:26px;
+	text-align:center;
+	width:300px;
+}
+
+.wo-logo { 
+	background:url('../img/wo-logo.png') center no-repeat;
+	display:block;
+	height:52px;
+}
+
+/* Layout
+-------------------------------------------------- */
+
+.speaker-col {
+	margin-bottom:2em;
+}
+
+.emailsignup input{
+	margin:0;
+}
+
+
+/* Media Queries
+-------------------------------------------------- */
+
+@media only screen and (max-width : 1260px) and (min-width:768px) {
+
+	.emailsignup .send {
+		text-align:center;
+	}
+
+	.emailsignup .field {
+		width:58%;
+	}
+
+}
+
+@media only screen and (max-width: 979px) and (min-width: 768px) {
+	h2 {
+		font-size:2.2em;
+	}
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+
+	header .radiohead {
+		background:url('../img/radiohead-medium.png');
+		height:410px;
+		margin:0 auto;
+		width:458px;
+	}
+
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	
+	header .radiohead {
+		background:url('../img/radiohead-small.png');
+		height:268px;
+		margin:0 auto;
+		width:289px;
+	}
+
+}
+
+/* Non-semantic Helper Classes
+-------------------------------------------------- */
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
